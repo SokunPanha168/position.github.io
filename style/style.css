@@ -1,0 +1,50 @@
+
+body{
+    background-color: aliceblue;
+}
+.box{
+    transition: .5s;
+   margin: auto;
+   margin-top: 100px;
+    width: 300px;
+
+    background-color: rgb(50, 50, 50);
+    position: relative;
+}
+
+
+
+.status{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    box-sizing: border-box;
+    width: 100px;
+    padding: 3px 0px;
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+
+p{
+    padding: 3px;
+    color: white;
+    margin: 0;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box:hover .status{
+    opacity: 1;
+    color: white;
+}
+
+.box:hover{
+    box-shadow: 3px 3px 3px black, -3px -3px 3px white;
+}
